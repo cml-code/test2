@@ -1,0 +1,121 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>layui 练习</title>
+    <link rel="stylesheet" href="layui/css/layui.css">
+</head>
+
+<body>
+    <script src="layui/layui.js"></script>
+
+    <div class="layui-layout-body">
+        <!--头部-->
+        <div class="layui-layout layui-layout-admin">
+            <div class="layui-header">
+                <div class="layui-logo">layui layout</div>
+                <!--水平导航-->
+                <ul class="layui-nav layui-layout-left">
+                    <li class="layui-nav-item"><a>控制台</a></li>
+                    <li class="layui-nav-item"><a>商品管理</a></li>
+                    <li class="layui-nav-item">
+                        <a>其它系统</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="">邮件管理</a></dd>
+                            <dd><a href="">消息管理</a></dd>
+                            <dd><a href="">授权管理</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+
+                <ul class="layui-nav layui-layout-right">
+                   <li class="layui-nav-item">
+                       <a>
+                           <p>a img img img</p>
+                       </a>
+
+                       <!--二级菜单-->
+                       <dl class="layui-nav-child">
+                           <dd><a>基本资料</a></dd>
+                           <dd><a>安全设置</a></dd>
+                       </dl>
+                   </li>
+                    <li class="layui-nav-item"><a>退了</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!--左侧-->
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <!--<ul class="layui-nav layui-nav-tree" lay-filter="test">-->
+                    <!--<li class="layui-nav-item layui-nav-itemed">-->
+                        <!--<a href="javascript:;" >所有商品</a>-->
+                        <!--<dl class="layui-nav-child">-->
+                            <!--<dd>-->
+                                <!--<a href="javascript:;" >1111</a>-->
+                                <!--<a href="javascript:;" >2222</a>-->
+                                <!--<a href="javascript:;" >3333</a>-->
+                                <!--<a href="javascript:;" >4444</a>-->
+                            <!--</dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li class="layui-nav-item layui-nav-itemed">-->
+                        <!--<a href="">解决方案</a>-->
+                        <!--<dl class="layui-nav-child">-->
+                            <!--<dd>-->
+                                <!--<a>8888</a>-->
+                                <!--<a>6666</a>-->
+                            <!--</dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li class="layui-nav-item"><a>云市场</a></li>-->
+                    <!--<li class="layui-nav-item"><a>发布商品</a></li>-->
+                <!--</ul>-->
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a href="javascript:;">默认展开</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;">选项1</a></dd>
+                            <dd><a href="javascript:;">选项2</a></dd>
+                            <dd><a href="">跳转</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">解决方案</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="">移动模块</a></dd>
+                            <dd><a href="">后台模版</a></dd>
+                            <dd><a href="">电商平台</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item"><a href="">产品</a></li>
+                    <li class="layui-nav-item"><a href="">大数据</a></li>
+                </ul>
+            </div>
+
+            <div class="layui-body">
+                <div style="padding: 10px">主体  主体  主体</div>
+            </div>
+
+            <div class="layui-footer">
+                <div style="padding: 10px">底部  底部  底部</div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script>
+        layui.use(['layer','form','element'],function () {
+            var layer=layui.layer;
+            var element=layui.element;
+            var form=layui.form;
+
+            layer.msg("hello hello hello!");
+        })
+    </script>
+</body>
+</html>
